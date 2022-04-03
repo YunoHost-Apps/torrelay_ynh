@@ -21,10 +21,6 @@ The Tor network relies on volunteers to donate bandwidth. The more people who ru
 
 
 
-## Screenshots
-
-![](./doc/screenshots/example.jpg)
-
 ## Documentation and resources
 
 * Official app website: https://www.torproject.org/
