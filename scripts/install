@@ -1,0 +1,94 @@
+#!/bin/bash
+
+#=================================================
+# GENERIC START
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
+source _common.sh
+source /usr/share/yunohost/helpers
+
+#=================================================
+# MANAGE SCRIPT FAILURE
+#=================================================
+
+# Exit if an error occurs during the execution of the script
+ynh_abort_if_errors
+
+#=================================================
+# RETRIEVE ARGUMENTS FROM THE MANIFEST
+#=================================================
+
+domain=$YNH_APP_ARG_DOMAIN
+contact=$YNH_APP_ARG_CONTACT
+nickname=$YNH_APP_ARG_NICKNAME
+
+app=$YNH_APP_INSTANCE_NAME
+
+#=================================================
+# STORE SETTINGS FROM MANIFEST
+#=================================================
+ynh_script_progression --message="Storing installation settings..." --weight=1
+
+ynh_app_setting_set --app=$app --key=domain --value=$domain
+ynh_app_setting_set --app=$app --key=contact --value=$contact
+ynh_app_setting_set --app=$app --key=nickname --value=$nickname
+
+#=================================================
+# STANDARD MODIFICATIONS
+#=================================================
+# FIND AND OPEN A PORT
+#=================================================
+ynh_script_progression --message="Finding an available port..." --weight=1
+
+# Find free ports
+or_port=$(ynh_find_port --port=9002)
+obfs4_port=$(ynh_find_port --port=$(($or_port + 1)))
+
+# Find an available port
+ynh_app_setting_set --app=$app --key=or_port --value=$or_port
+ynh_app_setting_set --app=$app --key=obfs4_port --value=$obfs4_port
+
+# Open the port
+ynh_script_progression --message="Configuring firewall..." --weight=1
+ynh_exec_warn_less yunohost firewall allow Both $or_port
+ynh_exec_warn_less yunohost firewall allow Both $obfs4_port
+
+#=================================================
+# INSTALL DEPENDENCIES
+#=================================================
+ynh_script_progression --message="Installing dependencies..." --weight=10
+
+ynh_install_app_dependencies $pkg_dependencies
+
+#=================================================
+# ADD A CONFIGURATION
+#=================================================
+ynh_script_progression --message="Adding a configuration file..." --weight=1
+
+ynh_add_config --template="../conf/torrc" --destination="/etc/tor/torrc"
+
+chmod 660  /etc/tor/torrc
+chown :debian-tor /etc/tor/torrc
+
+#=================================================
+# INTEGRATE SERVICE IN YUNOHOST
+#=================================================
+ynh_script_progression --message="Integrating service in YunoHost..." --weight=2
+
+yunohost service add tor --description="Tor Relay" --log="/var/log/$app/$app.log" --needs_exposed_ports="$or_port"
+
+#=================================================
+# START SYSTEMD SERVICE
+#=================================================
+ynh_script_progression --message="Starting a systemd service..." --weight=3
+
+# Start a systemd service
+ynh_systemd_action --service_name=tor --action="restart" --log_path="systemd"
+
+#=================================================
+# END OF SCRIPT
+#=================================================
+
+ynh_script_progression --message="Installation of $app completed" --last
