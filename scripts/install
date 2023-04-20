@@ -79,7 +79,7 @@ chown :debian-tor /etc/tor/torrc
 #=================================================
 ynh_script_progression --message="Integrating service in YunoHost..." --weight=2
 
-yunohost service add tor --description="Tor Relay" --log="/var/log/$app/$app.log" --needs_exposed_ports="$or_port"
+yunohost service add tor --description="Tor Relay" --log="/var/log/$app/$app.log" --needs_exposed_ports="$or_port" --test_status="pgrep tor"
 
 #=================================================
 # START SYSTEMD SERVICE
