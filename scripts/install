@@ -62,7 +62,7 @@ ynh_script_progression --message="Installing dependencies..." --weight=10
 
 ynh_install_app_dependencies "$pkg_dependencies"
 
-ynh_install_extra_app_dependencies --repo="https://deb.torproject.org/torproject.org" --package="$pkg_dependencies_extra" --key="https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc"
+ynh_install_extra_app_dependencies --repo="deb https://deb.torproject.org/torproject.org $(lsb_release -cs) main" --package="$pkg_dependencies_extra" --key="https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc"
 
 #=================================================
 # ADD A CONFIGURATION
