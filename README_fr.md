@@ -19,11 +19,6 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 The Tor network relies on volunteers to donate bandwidth. The more people who run relays, the better the Tor network will be. The current Tor network is quite small compared to the number of people who need to use Tor, which means we need more dedicated volunteers like you to run relays.
 
 **Version incluse :** 0.4.6.10~ynh2
-
-## Captures d’écran
-
-![Capture d’écran de Tor relay](./doc/screenshots/example.jpg)
-
 ## Documentations et ressources
 
 * Site officiel de l’app : <https://www.torproject.org/>
