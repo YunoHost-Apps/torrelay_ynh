@@ -5,7 +5,7 @@
 #=================================================
 
 # dependencies used by the app
-pkg_dependencies="apt-transport-https obfs4proxy"
+#REMOVEME? pkg_dependencies="apt-transport-https obfs4proxy"
 pkg_dependencies_extra="tor tor-geoipdb deb.torproject.org-keyring"
 
 #=================================================
