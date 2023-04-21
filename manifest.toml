@@ -5,7 +5,7 @@ name = "Tor relay"
 description.en = "Defend Your Privacy! How To Create Your Own Tor Relay!"
 description.fr = "Défendez votre vie privée ! Comment créer votre propre relais Tor !"
 
-version = "0.4.6.10~ynh2"
+version = "0.4.7.13~ynh3"
 
 maintainers = []
 
@@ -17,12 +17,12 @@ code = "https://github.com/torproject/tor"
 
 [integration]
 yunohost = ">= 11.1.17"
-architectures = "all"
+architectures = ["amd64", "arm64", "i386"]
 multi_instance = false
 ldap ="not_relevant"
 sso = "not_relevant"
 disk = "50M"
-ram.build = "50M"
+ram.build = "100M"
 ram.runtime = "50M"
 
 [install]
