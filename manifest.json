@@ -6,7 +6,7 @@
         "en": "Defend Your Privacy! How To Create Your Own Tor Relay!",
         "fr": "Defend Your Privacy! How To Create Your Own Tor Relay!"
     },
-    "version": "0.4.6.10~ynh2",
+    "version": "0.4.7.13~ynh1",
     "url": "https://www.torproject.org/",
     "upstream": {
         "license": "BSD-3-Clause",
