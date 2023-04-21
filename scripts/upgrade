@@ -56,7 +56,9 @@ ynh_systemd_action --service_name=tor --action="stop" --log_path="systemd"
 #=================================================
 ynh_script_progression --message="Upgrading dependencies..." --weight=10
 
-ynh_install_app_dependencies $pkg_dependencies
+ynh_install_app_dependencies "$pkg_dependencies"
+
+ynh_install_extra_app_dependencies --repo="deb https://deb.torproject.org/torproject.org $(lsb_release -cs) main" --package="$pkg_dependencies_extra" --key="https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc"
 
 #=================================================
 # UPDATE A CONFIG FILE
@@ -73,7 +75,7 @@ chown :debian-tor /etc/tor/torrc
 #=================================================
 ynh_script_progression --message="Integrating service in YunoHost..." --weight=1
 
-yunohost service add tor --description="Tor Relay" --log="/var/log/$app/$app.log" --needs_exposed_ports="$or_port"
+yunohost service add tor --description="Tor Relay" --log="/var/log/$app/$app.log" --needs_exposed_ports="$or_port" --test_status="pgrep tor"
 
 #=================================================
 # START SYSTEMD SERVICE
