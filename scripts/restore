@@ -11,36 +11,6 @@ source ../settings/scripts/_common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# MANAGE SCRIPT FAILURE
-#=================================================
-
-# Exit if an error occurs during the execution of the script
-ynh_abort_if_errors
-
-#=================================================
-# LOAD SETTINGS
-#=================================================
-ynh_script_progression --message="Loading installation settings..." --weight=1
-
-app=$YNH_APP_INSTANCE_NAME
-
-domain=$(ynh_app_setting_get --app=$app --key=domain)
-or_port=$(ynh_app_setting_get --app=$app --key=or_port)
-obfs4_port=$(ynh_app_setting_get --app=$app --key=obfs4_port)
-
-#=================================================
-# SPECIFIC RESTORATION
-#=================================================
-# REINSTALL DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Reinstalling dependencies..." --weight=10
-
-# Define and install dependencies
-ynh_install_app_dependencies "$pkg_dependencies"
-
-ynh_install_extra_app_dependencies --repo="deb https://deb.torproject.org/torproject.org $(lsb_release -cs) main" --package="$pkg_dependencies_extra" --key="https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc"
-
-#=================================================
 # RESTORE VARIOUS FILES
 #=================================================
 ynh_script_progression --message="Restoring various files..." --weight=1
@@ -52,7 +22,7 @@ ynh_restore_file --origin_path="/etc/tor/torrc"
 #=================================================
 ynh_script_progression --message="Integrating service in YunoHost..." --weight=1
 
-yunohost service add tor --description="Tor Relay" --log="/var/log/$app/$app.log" --needs_exposed_ports="$or_port" --test_status="pgrep tor"
+yunohost service add tor --description="Tor Relay" --log="/var/log/$app/$app.log" --needs_exposed_ports="$port_or" --test_status="pgrep tor"
 
 #=================================================
 # START SYSTEMD SERVICE
