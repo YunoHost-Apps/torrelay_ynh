@@ -24,7 +24,7 @@ The Tor network relies on volunteers to donate bandwidth. The more people who ru
 * Site officiel de l’app : <https://www.torproject.org/>
 * Documentation officielle de l’admin : <https://community.torproject.org/relay/setup/bridge/debian-ubuntu/>
 * Dépôt de code officiel de l’app : <https://github.com/torproject/tor>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_torrelay>
+* YunoHost Store: <https://apps.yunohost.org/app/torrelay>
 * Signaler un bug : <https://github.com/YunoHost-Apps/torrelay_ynh/issues>
 
 ## Informations pour les développeurs
