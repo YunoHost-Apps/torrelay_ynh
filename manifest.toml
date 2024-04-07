@@ -5,7 +5,7 @@ name = "Tor relay"
 description.en = "Defend Your Privacy! How To Create Your Own Tor Relay!"
 description.fr = "Défendez votre vie privée ! Comment créer votre propre relais Tor !"
 
-version = "0.4.7.13~ynh3"
+version = "0.4.8.10~ynh1"
 
 maintainers = []
 
@@ -16,7 +16,7 @@ admindoc = "https://community.torproject.org/relay/setup/bridge/debian-ubuntu/"
 code = "https://github.com/torproject/tor"
 
 [integration]
-yunohost = ">= 11.1.17"
+yunohost = ">= 11.2"
 architectures = ["amd64", "arm64", "i386"]
 multi_instance = false
 ldap ="not_relevant"
@@ -28,7 +28,6 @@ ram.runtime = "50M"
 [install]
     [install.domain]
     type = "domain"
-    full_domain = true
 
     [install.contact]
     ask.en = "Choose an email address so we can contact you if there are problems with your bridge. This is optional but encouraged."
