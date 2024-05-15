@@ -5,7 +5,7 @@ name = "Tor relay"
 description.en = "Defend Your Privacy! How To Create Your Own Tor Relay!"
 description.fr = "Défendez votre vie privée ! Comment créer votre propre relais Tor !"
 
-version = "0.4.8.10~ynh1"
+version = "0.4.8.10~ynh2"
 
 maintainers = []
 
@@ -58,6 +58,6 @@ ram.runtime = "50M"
     [resources.apt]
     packages = "apt-transport-https obfs4proxy"
 
-    extras.tor.repo = "deb https://deb.torproject.org/torproject.org bullseye main"
+    extras.tor.repo = "deb https://deb.torproject.org/torproject.org __YNH_DEBIAN_VERSION__ main"
     extras.tor.key = "https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc"
     extras.tor.packages = "tor tor-geoipdb deb.torproject.org-keyring"
