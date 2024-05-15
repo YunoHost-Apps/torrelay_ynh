@@ -18,7 +18,7 @@ NON debe editarse manualmente.
 
 The Tor network relies on volunteers to donate bandwidth. The more people who run relays, the better the Tor network will be. The current Tor network is quite small compared to the number of people who need to use Tor, which means we need more dedicated volunteers like you to run relays.
 
-**Versión proporcionada:** 0.4.8.10~ynh1
+**Versión proporcionada:** 0.4.8.10~ynh2
 ## Documentación e recursos
 
 - Web oficial da app: <https://www.torproject.org/>
