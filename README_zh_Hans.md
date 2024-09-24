@@ -5,7 +5,7 @@
 
 # YunoHost 上的 Tor relay
 
-[![集成程度](https://dash.yunohost.org/integration/torrelay.svg)](https://dash.yunohost.org/appci/app/torrelay) ![工作状态](https://ci-apps.yunohost.org/ci/badges/torrelay.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/torrelay.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/torrelay.svg)](https://ci-apps.yunohost.org/ci/apps/torrelay/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/torrelay.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/torrelay.maintain.svg)
 
 [![使用 YunoHost 安装 Tor relay](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=torrelay)
 

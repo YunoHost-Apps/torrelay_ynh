@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # Tor relay YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/torrelay.svg)](https://dash.yunohost.org/appci/app/torrelay) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/torrelay.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/torrelay.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/torrelay.svg)](https://ci-apps.yunohost.org/ci/apps/torrelay/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/torrelay.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/torrelay.maintain.svg)
 
 [![Instalatu Tor relay YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=torrelay)
 
