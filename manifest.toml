@@ -2,8 +2,8 @@ packaging_format = 2
 
 id = "torrelay"
 name = "Tor relay"
-description.en = "Defend Your Privacy! How To Create Your Own Tor Relay!"
-description.fr = "Défendez votre vie privée ! Comment créer votre propre relais Tor !"
+description.en = "Receive traffic on the Tor network and pass it along"
+description.fr = "Recevez le trafic sur le réseau Tor et transmettez-le"
 
 version = "0.4.8.12~ynh1"
 
@@ -16,7 +16,7 @@ admindoc = "https://community.torproject.org/relay/setup/bridge/debian-ubuntu/"
 code = "https://github.com/torproject/tor"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 11.2.30"
 architectures = ["amd64", "arm64", "i386"]
 multi_instance = false
 ldap ="not_relevant"
@@ -56,7 +56,7 @@ ram.runtime = "50M"
     [resources.permissions]
 
     [resources.apt]
-    packages = "apt-transport-https obfs4proxy"
+    packages = "apt-transport-https, obfs4proxy"
 
     extras.tor.repo = "deb https://deb.torproject.org/torproject.org __YNH_DEBIAN_VERSION__ main"
     extras.tor.key = "https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc"
