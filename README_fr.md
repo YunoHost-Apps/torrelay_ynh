@@ -19,7 +19,6 @@ Il NE doit PAS être modifié à la main.
 Le réseau Tor dépend des bénévoles qui donnent de la bande passante. Plus il y aura de personnes qui géreront les relais, meilleur sera le réseau Tor. Le réseau Tor actuel est assez petit par rapport au nombre de personnes qui ont besoin d'utiliser Tor, ce qui signifie que nous avons besoin de plus de bénévoles dévoués comme vous pour gérer les relais.
 
 **Version incluse :** 0.4.8.12~ynh1
-
 ## Documentations et ressources
 
 - Site officiel de l’app : <https://www.torproject.org/>
