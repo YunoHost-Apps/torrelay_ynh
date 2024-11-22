@@ -5,7 +5,7 @@ No se debe editar a mano.
 
 # Tor relay para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/torrelay.svg)](https://dash.yunohost.org/appci/app/torrelay) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/torrelay.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/torrelay.maintain.svg)
+[![Nivel de integración](https://dash.yunohost.org/integration/torrelay.svg)](https://ci-apps.yunohost.org/ci/apps/torrelay/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/torrelay.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/torrelay.maintain.svg)
 
 [![Instalar Tor relay con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=torrelay)
 
@@ -18,7 +18,7 @@ No se debe editar a mano.
 
 The Tor network relies on volunteers to donate bandwidth. The more people who run relays, the better the Tor network will be. The current Tor network is quite small compared to the number of people who need to use Tor, which means we need more dedicated volunteers like you to run relays.
 
-**Versión actual:** 0.4.8.10~ynh2
+**Versión actual:** 0.4.8.10~ynh3
 ## Documentaciones y recursos
 
 - Sitio web oficial: <https://www.torproject.org/>
@@ -29,7 +29,7 @@ The Tor network relies on volunteers to donate bandwidth. The more people who ru
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/torrelay_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/torrelay_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 

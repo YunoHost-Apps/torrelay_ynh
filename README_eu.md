@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # Tor relay YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/torrelay.svg)](https://dash.yunohost.org/appci/app/torrelay) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/torrelay.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/torrelay.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/torrelay.svg)](https://ci-apps.yunohost.org/ci/apps/torrelay/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/torrelay.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/torrelay.maintain.svg)
 
 [![Instalatu Tor relay YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=torrelay)
 
@@ -18,7 +18,7 @@ EZ editatu eskuz.
 
 The Tor network relies on volunteers to donate bandwidth. The more people who run relays, the better the Tor network will be. The current Tor network is quite small compared to the number of people who need to use Tor, which means we need more dedicated volunteers like you to run relays.
 
-**Paketatutako bertsioa:** 0.4.8.10~ynh2
+**Paketatutako bertsioa:** 0.4.8.10~ynh3
 ## Dokumentazioa eta baliabideak
 
 - Aplikazioaren webgune ofiziala: <https://www.torproject.org/>
