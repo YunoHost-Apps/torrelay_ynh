@@ -17,7 +17,7 @@ ynh_script_progression "Updating configuration..."
 
 ynh_config_add --template="torrc" --destination="/etc/tor/torrc"
 
-chmod 660  /etc/tor/torrc
+chmod 660 /etc/tor/torrc
 chown :debian-tor /etc/tor/torrc
 
 #=================================================
