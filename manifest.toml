@@ -5,7 +5,7 @@ name = "Tor relay"
 description.en = "Defend Your Privacy! How To Create Your Own Tor Relay!"
 description.fr = "Défendez votre vie privée ! Comment créer votre propre relais Tor !"
 
-version = "0.4.8.10~ynh2"
+version = "0.4.8.10~ynh3"
 
 maintainers = []
 
