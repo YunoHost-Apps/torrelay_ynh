@@ -15,7 +15,7 @@ ynh_app_setting_set --app=$app --key=nickname --value=$nickname
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template="../conf/torrc" --destination="/etc/tor/torrc"
+ynh_add_config --template="torrc" --destination="/etc/tor/torrc"
 
 chmod 660  /etc/tor/torrc
 chown :debian-tor /etc/tor/torrc
