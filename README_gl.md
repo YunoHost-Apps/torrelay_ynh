@@ -5,7 +5,9 @@ NON debe editarse manualmente.
 
 # Tor relay para YunoHost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/torrelay.svg)](https://ci-apps.yunohost.org/ci/apps/torrelay/) ![Estado de funcionamento](https://ci-apps.yunohost.org/ci/badges/torrelay.status.svg) ![Estado de mantemento](https://ci-apps.yunohost.org/ci/badges/torrelay.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/torrelay)](https://ci-apps.yunohost.org/ci/apps/torrelay/)
+![Estado de funcionamento](https://apps.yunohost.org/badge/state/torrelay)
+![Estado de mantemento](https://apps.yunohost.org/badge/maintained/torrelay)
 
 [![Instalar Tor relay con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=torrelay)
 
