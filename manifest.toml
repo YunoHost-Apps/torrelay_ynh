@@ -1,3 +1,5 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
 packaging_format = 2
 
 id = "torrelay"
@@ -16,11 +18,14 @@ admindoc = "https://community.torproject.org/relay/setup/bridge/debian-ubuntu/"
 code = "https://github.com/torproject/tor"
 
 [integration]
-yunohost = ">= 11.2.30"
+yunohost = ">= 12.0"
 architectures = ["amd64", "arm64", "i386"]
 multi_instance = false
-ldap ="not_relevant"
+
+ldap = "not_relevant"
+
 sso = "not_relevant"
+
 disk = "50M"
 ram.build = "100M"
 ram.runtime = "50M"
@@ -43,17 +48,17 @@ ram.runtime = "50M"
 
 [resources]
 
-    [resources.ports]
-    or.default = 9002
-    or.exposed = "Both"
-    obfs4.default = 9003
-    obfs4.exposed = "Both"
-
     [resources.system_user]
 
     [resources.install_dir]
 
     [resources.permissions]
+
+    [resources.ports]
+    or.default = 9002
+    or.exposed = "Both"
+    obfs4.default = 9003
+    obfs4.exposed = "Both"
 
     [resources.apt]
     packages = "apt-transport-https, obfs4proxy"

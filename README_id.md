@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Tor relay untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/torrelay.svg)](https://ci-apps.yunohost.org/ci/apps/torrelay/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/torrelay.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/torrelay.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/torrelay)](https://ci-apps.yunohost.org/ci/apps/torrelay/)
+![Status kerja](https://apps.yunohost.org/badge/state/torrelay)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/torrelay)
 
 [![Pasang Tor relay dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=torrelay)
 
