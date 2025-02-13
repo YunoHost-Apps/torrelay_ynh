@@ -5,7 +5,9 @@ Il NE doit PAS être modifié à la main.
 
 # Tor relay pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/torrelay.svg)](https://ci-apps.yunohost.org/ci/apps/torrelay/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/torrelay.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/torrelay.maintain.svg)
+[![Niveau d’intégration](https://apps.yunohost.org/badge/integration/torrelay)](https://ci-apps.yunohost.org/ci/apps/torrelay/)
+![Statut du fonctionnement](https://apps.yunohost.org/badge/state/torrelay)
+![Statut de maintenance](https://apps.yunohost.org/badge/maintained/torrelay)
 
 [![Installer Tor relay avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=torrelay)
 
@@ -16,9 +18,9 @@ Il NE doit PAS être modifié à la main.
 
 ## Vue d’ensemble
 
-The Tor network relies on volunteers to donate bandwidth. The more people who run relays, the better the Tor network will be. The current Tor network is quite small compared to the number of people who need to use Tor, which means we need more dedicated volunteers like you to run relays.
+Le réseau Tor dépend des bénévoles qui donnent de la bande passante. Plus il y aura de personnes qui géreront les relais, meilleur sera le réseau Tor. Le réseau Tor actuel est assez petit par rapport au nombre de personnes qui ont besoin d'utiliser Tor, ce qui signifie que nous avons besoin de plus de bénévoles dévoués comme vous pour gérer les relais.
 
-**Version incluse :** 0.4.8.10~ynh3
+**Version incluse :** 0.4.8.12~ynh1
 ## Documentations et ressources
 
 - Site officiel de l’app : <https://www.torproject.org/>

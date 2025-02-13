@@ -1,8 +1,6 @@
 #!/bin/bash
 
 #=================================================
-# GENERIC START
-#=================================================
 # IMPORT GENERIC HELPERS
 #=================================================
 
@@ -10,7 +8,7 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# STORE SETTINGS FROM MANIFEST
+# INITIALIZE AND STORE SETTINGS
 #=================================================
 
 ynh_app_setting_set --app=$app --key=contact --value=$contact
@@ -21,7 +19,7 @@ ynh_app_setting_set --app=$app --key=nickname --value=$nickname
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template="../conf/torrc" --destination="/etc/tor/torrc"
+ynh_add_config --template="torrc" --destination="/etc/tor/torrc"
 
 chmod 660  /etc/tor/torrc
 chown :debian-tor /etc/tor/torrc
@@ -38,7 +36,6 @@ yunohost service add tor --description="Tor Relay" --log="/var/log/$app/$app.log
 #=================================================
 ynh_script_progression --message="Starting a systemd service..." --weight=3
 
-# Start a systemd service
 ynh_systemd_action --service_name=tor --action="restart" --log_path="systemd"
 
 #=================================================

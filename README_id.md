@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Tor relay untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/torrelay.svg)](https://ci-apps.yunohost.org/ci/apps/torrelay/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/torrelay.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/torrelay.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/torrelay)](https://ci-apps.yunohost.org/ci/apps/torrelay/)
+![Status kerja](https://apps.yunohost.org/badge/state/torrelay)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/torrelay)
 
 [![Pasang Tor relay dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=torrelay)
 
@@ -18,7 +20,7 @@ Ini TIDAK boleh diedit dengan tangan.
 
 The Tor network relies on volunteers to donate bandwidth. The more people who run relays, the better the Tor network will be. The current Tor network is quite small compared to the number of people who need to use Tor, which means we need more dedicated volunteers like you to run relays.
 
-**Versi terkirim:** 0.4.8.10~ynh3
+**Versi terkirim:** 0.4.8.12~ynh1
 ## Dokumentasi dan sumber daya
 
 - Website aplikasi resmi: <https://www.torproject.org/>

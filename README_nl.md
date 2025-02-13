@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # Tor relay voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/torrelay.svg)](https://ci-apps.yunohost.org/ci/apps/torrelay/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/torrelay.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/torrelay.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/torrelay)](https://ci-apps.yunohost.org/ci/apps/torrelay/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/torrelay)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/torrelay)
 
 [![Tor relay met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=torrelay)
 
@@ -18,7 +20,7 @@ Hij mag NIET handmatig aangepast worden.
 
 The Tor network relies on volunteers to donate bandwidth. The more people who run relays, the better the Tor network will be. The current Tor network is quite small compared to the number of people who need to use Tor, which means we need more dedicated volunteers like you to run relays.
 
-**Geleverde versie:** 0.4.8.10~ynh3
+**Geleverde versie:** 0.4.8.12~ynh1
 ## Documentatie en bronnen
 
 - Officiele website van de app: <https://www.torproject.org/>
