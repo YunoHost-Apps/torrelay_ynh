@@ -18,7 +18,7 @@ admindoc = "https://community.torproject.org/relay/setup/bridge/debian-ubuntu/"
 code = "https://github.com/torproject/tor"
 
 [integration]
-yunohost = ">= 11.2.30"
+yunohost = ">= 12.0"
 architectures = ["amd64", "arm64", "i386"]
 multi_instance = false
 
