@@ -21,8 +21,8 @@ ynh_script_progression --message="Adding a configuration file..." --weight=1
 
 ynh_add_config --template="torrc" --destination="/etc/tor/torrc"
 
-chmod 660  /etc/tor/torrc
-chown :debian-tor /etc/tor/torrc
+chmod 660 "/etc/tor/torrc"
+chown :debian-tor "/etc/tor/torrc"
 
 #=================================================
 # INTEGRATE SERVICE IN YUNOHOST
