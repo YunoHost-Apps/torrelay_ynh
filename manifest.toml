@@ -7,7 +7,7 @@ name = "Tor relay"
 description.en = "Receive traffic on the Tor network and pass it along"
 description.fr = "Recevez le trafic sur le réseau Tor et transmettez-le"
 
-version = "0.4.8.12~ynh1"
+version = "0.4.8.17~ynh1"
 
 maintainers = []
 
@@ -18,12 +18,12 @@ admindoc = "https://community.torproject.org/relay/setup/bridge/debian-ubuntu/"
 code = "https://github.com/torproject/tor"
 
 [integration]
-yunohost = ">= 12.0"
+yunohost = ">= 12.0.9"
+helpers_version = "2.1"
 architectures = ["amd64", "arm64", "i386"]
 multi_instance = false
 
 ldap = "not_relevant"
-
 sso = "not_relevant"
 
 disk = "50M"
@@ -63,6 +63,6 @@ ram.runtime = "50M"
     [resources.apt]
     packages = "apt-transport-https, obfs4proxy"
 
-    extras.tor.repo = "deb https://deb.torproject.org/torproject.org __YNH_DEBIAN_VERSION__ main"
+    extras.tor.repo = "deb https://deb.torproject.org/torproject.org bookworm main"
     extras.tor.key = "https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc"
     extras.tor.packages = "tor tor-geoipdb deb.torproject.org-keyring"

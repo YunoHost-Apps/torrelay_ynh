@@ -10,17 +10,18 @@ source /usr/share/yunohost/helpers
 #=================================================
 # REMOVE SERVICE INTEGRATION IN YUNOHOST
 #=================================================
+ynh_script_progression "Removing system configurations related to $app..."
 
-if ynh_exec_warn_less yunohost service status tor >/dev/null; then
+if ynh_hide_warnings yunohost service status tor >/dev/null; then
 	yunohost service remove tor
 fi
 
-ynh_remove_systemd_config --service=tor
+ynh_config_remove_systemd tor
 
-ynh_secure_remove --file="/etc/tor/torrc"
+ynh_safe_rm "/etc/tor/torrc"
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Removal of $app completed" --last
+ynh_script_progression "Removal of $app completed"
