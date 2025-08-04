@@ -7,7 +7,7 @@ name = "Tor relay"
 description.en = "Receive traffic on the Tor network and pass it along"
 description.fr = "Recevez le trafic sur le réseau Tor et transmettez-le"
 
-version = "0.4.8.12~ynh1"
+version = "0.4.8.17~ynh1"
 
 maintainers = []
 
