@@ -1,10 +1,14 @@
 #!/bin/bash
 
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
 source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# STORE SETTINGS FROM MANIFEST
+# INITIALIZE AND STORE SETTINGS
 #=================================================
 
 ynh_app_setting_set --key=contact --value=$contact
@@ -17,8 +21,8 @@ ynh_script_progression "Adding $app's configuration..."
 
 ynh_config_add --template="torrc" --destination="/etc/tor/torrc"
 
-chmod 660  /etc/tor/torrc
-chown :debian-tor /etc/tor/torrc
+chmod 660 "/etc/tor/torrc"
+chown :debian-tor "/etc/tor/torrc"
 
 #=================================================
 # INTEGRATE SERVICE IN YUNOHOST
