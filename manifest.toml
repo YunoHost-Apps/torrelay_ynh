@@ -7,7 +7,7 @@ name = "Tor relay"
 description.en = "Receive traffic on the Tor network and pass it along"
 description.fr = "Recevez le trafic sur le réseau Tor et transmettez-le"
 
-version = "0.4.8.17~ynh2"
+version = "0.4.9.11~ynh1"
 
 maintainers = []
 
@@ -15,7 +15,7 @@ maintainers = []
 license = "BSD-3-Clause"
 website = "https://www.torproject.org/"
 admindoc = "https://community.torproject.org/relay/setup/bridge/debian-ubuntu/"
-code = "https://github.com/torproject/tor"
+code = "https://gitlab.torproject.org/tpo/core/tor"
 
 [integration]
 yunohost = ">= 12.1.17"
