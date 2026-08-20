@@ -15,7 +15,7 @@ maintainers = []
 license = "BSD-3-Clause"
 website = "https://www.torproject.org/"
 admindoc = "https://community.torproject.org/relay/setup/bridge/debian-ubuntu/"
-code = "https://github.com/torproject/tor"
+code = "https://gitlab.torproject.org/tpo/core/tor"
 
 [integration]
 yunohost = ">= 12.1.17"
