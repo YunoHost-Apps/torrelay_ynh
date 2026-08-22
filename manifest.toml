@@ -47,6 +47,11 @@ ram.runtime = "50M"
     default = "PickANickname"
 
 [resources]
+    [resources.sources.main]
+    # Sources are not used as this app relies on apt packages. It's only here for autoupdate.
+    url = "https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.9.11/tor-tor-0.4.9.11.tar.gz"
+    sha256 = "5dcc2e0808674c9fdb8ff6032a8c8d5467211bc5ac225ddaf6a4e2484139baec"
+    autoupdate.strategy = "latest_gitlab_tag"
 
     [resources.system_user]
 
