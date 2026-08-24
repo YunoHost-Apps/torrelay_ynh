@@ -12,10 +12,13 @@ source /usr/share/yunohost/helpers
 ynh_script_progression "Removing system configurations related to $app..."
 
 if ynh_hide_warnings yunohost service status tor >/dev/null; then
-	yunohost service remove tor
+    yunohost service stop tor
+    yunohost service remove tor
 fi
 
-ynh_config_remove_systemd tor
+if ynh_hide_warnings systemctl list-unit-files --all | grep -q "tor@default.service" >/dev/null; then
+    systemctl stop tor@default
+fi
 
 ynh_safe_rm "/etc/tor/torrc"
 
