@@ -11,7 +11,7 @@ It shall NOT be edited by hand.
 Receive traffic on the Tor network and pass it along
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://www.torproject.org/)
-[![Version: 0.4.8.17~ynh2](https://img.shields.io/badge/Version-0.4.8.17~ynh2-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/torrelay/)
+[![Version: 0.4.9.11~ynh1](https://img.shields.io/badge/Version-0.4.9.11~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/torrelay/)
 
 <div align="center">
 <a href="https://apps.yunohost.org/app/torrelay"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
@@ -22,7 +22,7 @@ Receive traffic on the Tor network and pass it along
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/torrelay)](https://ci-apps.yunohost.org/ci/apps/torrelay/)
 
-🛠️ Upstream Tor relay repository: <https://github.com/torproject/tor>
+🛠️ Upstream Tor relay repository: <https://gitlab.torproject.org/tpo/core/tor>
 
 Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/torrelay_ynh/tree/testing).
 
