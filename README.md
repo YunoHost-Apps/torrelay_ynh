@@ -22,7 +22,7 @@ Receive traffic on the Tor network and pass it along
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/torrelay)](https://ci-apps.yunohost.org/ci/apps/torrelay/)
 
-🛠️ Upstream Tor relay repository: <https://github.com/torproject/tor>
+🛠️ Upstream Tor relay repository: <https://gitlab.torproject.org/tpo/core/tor>
 
 Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/torrelay_ynh/tree/testing).
 
